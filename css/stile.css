@@ -1,0 +1,359 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body html {
+  width: 100%;
+  background-color: #fff9f3;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+.wrapper .menu {
+  width: 100%;
+  height: 53px;
+  margin: auto;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu .m_left img {
+  cursor: pointer;
+  width: 122px;
+  height: 53px;
+}
+.m_midle {
+  display: flex;
+  align-items: center;
+}
+.m_midle a {
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+  color: #282b22;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.m_right {
+  display: flex;
+  align-items: center;
+}
+.menu ul {
+  display: inline-flex;
+  gap: 40px;
+}
+.menu ul li a:hover {
+  color: #ae7b3c;
+}
+.mesenger {
+  cursor: pointer;
+  display: flex;
+  gap: 15px;
+}
+.m_right img {
+  margin-right: 7px;
+}
+.m_right a {
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  color: #3d4a39;
+}
+.bur {
+  display: none;
+}
+input[type="checkbox"] {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .menu {
+    height: 53px;
+    margin: auto;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu ul {
+    display: inline-flex;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .menu {
+    height: 53px;
+    margin: auto;
+    max-width: 600px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .m_midle {
+    display: none;
+    position: absolute;
+    width: 320px;
+    height: 495px;
+    top: 73px;
+    left: 320px;
+    z-index: 25;
+    padding-top: 20px;
+    text-align: center;
+    background-color: #fff;
+  }
+  .bur {
+    display: block;
+    margin-left: 50px;
+  }
+  #chek:checked + .m_midle {
+    display: block;
+  }
+  .menu ul {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 320px) {
+  .menu {
+    height: 53px;
+    margin: auto;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .mesenger {
+    display: none;
+  }
+  .m_midle {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 495px;
+    top: 73px;
+    left: 0px;
+    z-index: 20;
+  }
+  .m_right img {
+    display: none;
+  }
+  .m_right a {
+    display: none;
+  }
+  #chek:checked + .m_midle {
+    display: block;
+    background-color: #fff;
+  }
+  .menu ul {
+    flex-direction: column;
+  }
+}
+.main {
+  position: relative;
+  margin-top: 20px;
+}
+.main img {
+  width: 100%;
+  object-fit: cover;
+  width: 1600px;
+  height: 687px;
+}
+.main_mal {
+  width: 537px;
+  margin-top: 20px;
+  text-align: center;
+  position: absolute;
+  top: 140px;
+  left: 531px;
+}
+.main_mal h1 {
+  font-family: Lato;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 67.2px;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+.main_mal p {
+  width: 537px;
+  height: 81px;
+  color: #fff;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: center;
+  margin-top: 20px;
+}
+.main_mal button {
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  width: 260px;
+  color: #fff;
+  height: 60px;
+  border: 0px;
+  padding: 22px 56px 22px 56px;
+  box-shadow: 0px 20px 25px 0px #0000000d;
+  background: #ae7b3c;
+  margin-top: 50px;
+}
+@media only screen and (max-width: 1000px) {
+  .main img {
+    height: 760px;
+    max-width: 100%;
+  }
+
+  .main_mal {
+    top: 120px;
+    width: 90%;
+    max-width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .main_mal h1 {
+    font-family: Lato;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.6px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .main_mal p {
+    width: 537px;
+    height: 81px;
+
+    height: auto;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23.2px;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .main_mal button {
+    width: 260px;
+    height: 60px;
+
+    padding: 22px 56px 22px 56px;
+
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    padding: 22px 56px 22px 56px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .main img {
+    height: 760px;
+    max-width: 100%;
+  }
+
+  .main_mal {
+    width: 90%;
+    max-width: 100%;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .main_mal h1 {
+    font-family: Lato;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.6px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .main_mal p {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23.2px;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .main_mal button {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    padding: 22px 56px 22px 56px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .main img {
+    width: 320px;
+    height: 495px;
+  }
+  .main_mal {
+    width: 90%;
+    height: 495px;
+    max-width: 320px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .main_mal h1 {
+    font-family: Lato;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.6px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .main_mal p {
+    width: 300px;
+    height: 115px;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23.2px;
+    text-align: center;
+  }
+
+  .main_mal button {
+    width: 300px;
+    height: 60px;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    padding: 22px 56px 22px 56px;
+  }
+}
